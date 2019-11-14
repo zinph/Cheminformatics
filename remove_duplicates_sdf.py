@@ -9,6 +9,8 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
+# Remember to install RDKIT and pandas libraries before running the script!
+
 from rdkit import Chem
 from rdkit.Chem import PandasTools
 import pandas as pd
