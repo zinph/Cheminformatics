@@ -1,15 +1,16 @@
 #-------------------------------------------------------------------------------
-# Name:        module1
-# Purpose:     Remove duplicate compounds from sdf file based on Inchi keys.
-#
+# Name:        remove_duplicates_sdf
 # Author:      zinph
-#
 # Created:     14/11/2019
 # Copyright:   (c) zinph 2019
-# Licence:     <your licence>
 #-------------------------------------------------------------------------------
-
+# Objective:     Remove duplicate compounds from sdf file based on Inchi keys.
 # Remember to install RDKIT and pandas libraries before running the script!
+
+#How to use it:
+#     The program will prompt user to upload an sdf file containing chemical structures.
+#     It will output a file with the original name with "_DuplicatesRemoved.sdf" extension in the same folder.
+#-------------------------------------------------------------------------------
 
 from rdkit import Chem
 from rdkit.Chem import PandasTools

@@ -1,13 +1,17 @@
 #-------------------------------------------------------------------------------
 # Name:        MergeFiles
-# Purpose:     To combine multiple files of the same format into one file of either the
-#              same format or a different format.
-#              Targettig mainly .mol, .sdf, and .txt files.
 # Author:      zinph
-#
 # Created:     29/09/2016
 # Copyright:   (c) zinph 2016
-# Licence:     <your licence>
+#-------------------------------------------------------------------------------
+#Objective: To combine multiple files of the same format into one file of either the
+#           same format or a different format.
+#           Targettig mainly .mol, .sdf, and .txt files.
+#How to use it:
+#     the program will prompt user for three inputs:
+#         (A) file location - you just need to choose the directory in the prompted dialogue       
+#         (B) input extension of the files you want to put together (without dot); for example:  mol
+#         (C) desired output of the file you want to merge (with extension); for example: newfile.sdf
 #-------------------------------------------------------------------------------
 
 from tkinter import filedialog
