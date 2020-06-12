@@ -40,12 +40,11 @@ class Macrocycle_Descriptors:
             RS = self.compute_ringsize(self.mols[i])  # nR3 to nR99
             RS_12_99 = RS[9:]    # start with nR12 up to nR99
             ring_indices = [i for i,x in enumerate(RS_12_99) if x!=0]  # get index if item isn't equal to 0
-            if ring_indices:
-                # find 1, locate the last index
-                # largest_RS is based on RS 3 to 99.
-                # Add 3 (starting ring count) to get up to the actual ring size
-                smallest_RS = ring_indices[0]+12
-                largest_RS = ring_indices[-1]+12
+            # if there is a particular ring present, the frequency won't be zero. Find those indexes. 
+			if ring_indices:
+                # Add 12 (starting ring count) to get up to the actual ring size
+                smallest_RS = ring_indices[0]+12     # Retrieve the first index (for the smallest core RS - note the list is in ascending order)
+                largest_RS = ring_indices[-1]+12	 # Retrieve the last index (for the largest core RS)
                 RS_12_99.append(smallest_RS)  # Smallest RS
                 RS_12_99.append(largest_RS)  # Largest RS
             else:
