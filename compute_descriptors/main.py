@@ -36,23 +36,24 @@ def main():
     smiles = [standardize_smiles(i) for i in df['smiles'].values]
 
     start_time = time.time()
+    output_filename = 'desc' + filename[4:]
 
     ### Compute ECFP6 Fingerprints and export file.
     ecfps_descriptor = ECFP6(smiles)
-    ecfps_descriptor.compute_ECFP6('desc/ecfp6.csv')
+    ecfps_descriptor.compute_ECFP6(output_filename)
 
     ## Compute MACCS Fingerprints and export file.
     maccs_descriptor = MACCS(smiles)
-    maccs_descriptor.compute_MACCS('desc/maccs.csv')
+    maccs_descriptor.compute_MACCS(output_filename)
 
     ## Compute RDKit 2D Descriptors and export file.
     rdk_descriptor = RDKit_2D(smiles)
-    rdk_descriptor.compute_2Drdkit('desc/2Drdkit.csv')
+    rdk_descriptor.compute_2Drdkit(output_filename)
 
     ## Compute mordred_mrc Descriptors and export file.
     mrc_descriptor = Macrocycle_Descriptors(smiles)
-    mrc_descriptor.mordred_compute('desc/mordred.csv')
-    mrc_descriptor.compute_mordred_macrocycle('desc/mordred_mrc.csv')
+    mrc_descriptor.mordred_compute(output_filename)
+    mrc_descriptor.compute_mordred_macrocycle(output_filename)
 
 
     duration = convert_time(time.time()-start_time)

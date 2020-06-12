@@ -12,7 +12,7 @@ class MACCS:
     def __init__(self, smiles):
         self.mols = [Chem.MolFromSmiles(i) for i in smiles]
         self.smiles = smiles
-        
+
     def compute_MACCS(self, name):
         MACCS_list = []
         header = ['bit' + str(i) for i in range(167)]

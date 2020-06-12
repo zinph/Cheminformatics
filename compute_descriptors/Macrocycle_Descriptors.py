@@ -21,36 +21,36 @@ class Macrocycle_Descriptors:
 
     def compute_ringsize(self, mol):
         '''
-        check for macrolides of RS 3 to 100, return a  list of ring counts.
-        [RS3,RS4,.....,RS100]
+        check for macrolides of RS 3 to 99, return a  list of ring counts.
+        [RS3,RS4,.....,RS99]
         [0,0,0,...,1,...,0]
         '''
-        RS_3_100 = [i+3 for i in range(97)]
+        RS_3_99 = [i+3 for i in range(97)]
         RS_count = []
-        for j in RS_3_100:
+        for j in RS_3_99:
             RS = RingCount(order=j)(mol)
             RS_count.append(RS)
         return RS_count
 
     def macrolide_ring_info(self):
         headers = ['n'+str(i+13)+'Ring' for i in range(87)]+['SmallestRS','LargestRS']
-        # up to nR12 is already with mordred, start with nR13 to nR100
+        # up to nR12 is already with mordred, start with nR13 to nR99
         ring_sizes = []
         for i in range(len(self.mols)):
-            RS = self.compute_ringsize(self.mols[i])  # nR3 to nR100
-            RS_12_100 = RS[9:]    # start with nR12 up to nR100
-            ring_indices = [i for i,x in enumerate(RS_12_100) if x!=0]  # get index if item isn't equal to 0
+            RS = self.compute_ringsize(self.mols[i])  # nR3 to nR99
+            RS_12_99 = RS[9:]    # start with nR12 up to nR99
+            ring_indices = [i for i,x in enumerate(RS_12_99) if x!=0]  # get index if item isn't equal to 0
             if ring_indices:
                 # find 1, locate the last index
-                # largest_RS is based on RS 3 to 100.
+                # largest_RS is based on RS 3 to 99.
                 # Add 3 (starting ring count) to get up to the actual ring size
                 smallest_RS = ring_indices[0]+12
                 largest_RS = ring_indices[-1]+12
-                RS_12_100.append(smallest_RS)  # Smallest RS
-                RS_12_100.append(largest_RS)  # Largest RS
+                RS_12_99.append(smallest_RS)  # Smallest RS
+                RS_12_99.append(largest_RS)  # Largest RS
             else:
-                RS_12_100.extend(['',''])
-            ring_sizes.append(RS_12_100[1:]) # up to nR12 is already with mordred, start with nR13 to nR100
+                RS_12_99.extend(['',''])
+            ring_sizes.append(RS_12_99[1:]) # up to nR12 is already with mordred, start with nR13 to nR99
         df = pd.DataFrame(ring_sizes, columns=headers)
         return df
 

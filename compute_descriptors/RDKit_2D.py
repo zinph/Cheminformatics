@@ -14,7 +14,7 @@ class RDKit_2D:
     def __init__(self, smiles):
         self.mols = [Chem.MolFromSmiles(i) for i in smiles]
         self.smiles = smiles
-        
+
     def compute_2Drdkit(self, name):
         rdkit_2d_desc = []
         calc = MoleculeDescriptors.MolecularDescriptorCalculator([x[0] for x in Descriptors._descList])
