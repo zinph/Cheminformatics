@@ -99,7 +99,7 @@ class Macrocycle_Descriptors:
 
     def compute_mordred_macrocycle(self, name):
         if not isinstance(self.mordred, pd.DataFrame):
-            self.mordred = self.mordred_compute()
+            self.mordred = self.mordred_compute(name)
         ring_df = self.macrolide_ring_info()
         sugar_df = self.sugar_count()
         ester_df = self.core_ester_count()
