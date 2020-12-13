@@ -1,0 +1,98 @@
+attrs==19.3.0
+backcall==0.2.0
+backports.csv==1.0.7
+beautifulsoup4==4.9.1
+bleach==3.1.5
+certifi==2020.6.20
+chardet==3.0.4
+cheroot==8.3.1
+CherryPy==18.6.0
+click==7.1.2
+colorama==0.4.3
+cycler==0.10.0
+decorator==4.4.2
+defusedxml==0.6.0
+entrypoints==0.3
+feedparser==5.2.1
+future==0.18.2
+idna==2.10
+importlib-metadata==1.7.0
+ipykernel==5.3.2
+ipython==7.16.1
+ipython-genutils==0.2.0
+jaraco.classes==3.1.0
+jaraco.collections==3.0.0
+jaraco.functools==3.0.1
+jaraco.text==3.2.0
+jedi==0.17.1
+Jinja2==2.11.2
+joblib @ file:///tmp/build/80754af9/joblib_1594236160679/work
+json5==0.9.5
+jsonschema==3.2.0
+jupyter-client==6.1.5
+jupyter-core==4.6.3
+jupyterlab==2.1.5
+jupyterlab-server==1.2.0
+kiwisolver==1.2.0
+lxml==4.5.2
+MarkupSafe==1.1.1
+matplotlib==3.2.2
+mistune==0.8.4
+mkl-fft==1.1.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+molmass==2020.6.10
+MolVS==0.1.1
+more-itertools==8.4.0
+mysqlclient==2.0.1
+nbconvert==5.6.1
+nbformat==5.0.7
+nltk @ file:///tmp/build/80754af9/nltk_1592496090529/work
+notebook==6.0.3
+numpy==1.18.5
+olefile==0.46
+packaging==20.4
+pandas @ file:///C:/ci/pandas_1592841747005/work
+pandocfilters==1.4.2
+parso==0.7.0
+Pattern==3.6
+pdfminer.six==20200517
+pickleshare==0.7.5
+Pillow @ file:///C:/ci/pillow_1594298234712/work
+portend==2.6
+prometheus-client==0.8.0
+prompt-toolkit==3.0.5
+pycairo @ file:///C:/ci/pycairo_1593109035645/work
+pycryptodome==3.9.8
+pyenchant==3.1.1
+Pygments==2.6.1
+pyparsing==2.4.7
+pyrsistent==0.16.0
+python-dateutil==2.8.1
+python-docx==0.8.10
+pytz==2020.1
+pywin32==228
+pywinpty==0.5.7
+pyzmq==19.0.1
+regex @ file:///C:/ci/regex_1593435644645/work
+requests==2.24.0
+scikit-learn @ file:///C:/ci/scikit-learn_1592847564598/work
+scipy @ file:///C:/ci/scipy_1592916958183/work
+seaborn==0.10.1
+Send2Trash==1.5.0
+six==1.15.0
+sortedcontainers==2.2.2
+soupsieve==2.0.1
+tempora==4.0.0
+terminado==0.8.3
+testpath==0.4.4
+threadpoolctl @ file:///tmp/tmp9twdgx9k/threadpoolctl-2.1.0-py3-none-any.whl
+tornado==6.0.4
+tqdm @ file:///tmp/build/80754af9/tqdm_1593446365756/work
+traitlets==4.3.3
+urllib3==1.25.9
+wcwidth==0.2.5
+webencodings==0.5.1
+wincertstore==0.2
+zc.lockfile==2.0
+zipp==3.1.0
