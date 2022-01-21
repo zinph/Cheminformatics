@@ -18,7 +18,7 @@ future==0.18.2
 idna==2.10
 importlib-metadata==1.7.0
 ipykernel==5.3.2
-ipython==7.16.1
+ipython==7.16.3
 ipython-genutils==0.2.0
 jaraco.classes==3.1.0
 jaraco.collections==3.0.0
