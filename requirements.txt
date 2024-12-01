@@ -25,7 +25,7 @@ jaraco.collections==3.0.0
 jaraco.functools==3.0.1
 jaraco.text==3.2.0
 jedi==0.17.1
-Jinja2==2.11.2
+Jinja2==2.11.3
 joblib @ file:///tmp/build/80754af9/joblib_1594236160679/work
 json5==0.9.5
 jsonschema==3.2.0
