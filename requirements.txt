@@ -65,7 +65,7 @@ prompt-toolkit==3.0.5
 pycairo @ file:///C:/ci/pycairo_1593109035645/work
 pycryptodome==3.9.8
 pyenchant==3.1.1
-Pygments==2.6.1
+Pygments==2.7.4
 pyparsing==2.4.7
 pyrsistent==0.16.0
 python-dateutil==2.8.1
